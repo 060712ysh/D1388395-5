@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>必勝客系統連線中 (當機模擬)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="pizza-spinner">🍕</div>
+        <p id="loader-text">正在接通門市連線中... 0%</p>
+        <p class="sub-text">請勿重新整理，以免訂單排隊序號遺失</p>
+    </div>
+
+    <div class="container">
+        <h1 class="logo">PIZZA HUT TRACKER</h1>
+        
+        <div class="status-msg-box">
+            <p id="status-comfort-msg">正在確認您的美味排隊序號...</p>
+        </div>
+
+        <div class="progress-bar-wrapper">
+            <div class="step active" id="s1">訂單接收</div>
+            <div class="step" id="s2">準備中</div>
+            <div class="step" id="s3">烘烤中</div>
+            <div class="step" id="s4">派送中</div>
+        </div>
+
+        <button id="update-btn">更新外送狀態</button>
+
+        <footer>
+            美味值得等待，若您覺得等待時間過長，<br>請撥打客服熱線：<strong class="phone">0800-276-276</strong>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
