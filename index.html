@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>必勝客 | 系統緊急維護中</title>
+    <title>PIZZA HUT | 系統忙碌中</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div id="loader">
         <div class="pizza-spinner">🍕</div>
-        <p id="loader-text">正在嘗試恢復與門市的連線... 0%</p>
-        <p class="sub-text">請稍候，工程師正在搶修中</p>
+        <p id="loader-text">正在接通門市連線中... 0%</p>
     </div>
 
-    <div class="container">
-        <h1 class="logo">PIZZA HUT</h1>
-        
-        <div class="error-box">
-            <h2 class="error-title">抱歉！系統暫時無法處理您的訂單</h2>
-            <p id="status-comfort-msg">目前訂購系統發生預期外錯誤，我們正在全力修復...</p>
+    <main class="card">
+        <header class="card-header">
+            <h1 class="brand-name">PIZZA HUT</h1>
+            <h2 class="main-title">系統目前稍微塞車了 🚥</h2>
+        </header>
+
+        <section class="content">
+            <p>親愛的顧客請放心，目前湧入人數較多，<br>系統正在進行流量管制以保護您的訂單資料。</p>
+            <p class="highlight">您的操作並未中斷，請給我們一點時間為您安排連線，<br><strong>請不要重新整理網頁</strong>，以免重新排隊喔！</p>
+        </section>
+
+        <div class="queue-status">
+            <h3 class="status-title">正在為您保留連線通道...</h3>
+            <div class="progress-container">
+                <div class="progress-bar" id="bar"></div>
+            </div>
+            <p class="timer-text">將在 <span id="seconds">15</span> 秒後自動為您重新連線</p>
         </div>
 
-        <div class="progress-bar">
-            <div class="step active" id="s1">偵測異常</div>
-            <div class="step" id="s2">工程搶修</div>
-            <div class="step" id="s3">數據校驗</div>
-            <div class="step" id="s4">恢復服務</div>
+        <div class="info-box">
+            <span class="icon">🎫</span> 已為您鎖定排隊序號，請勿關閉視窗
         </div>
 
-        <button id="update-btn">查看修復進度</button>
-
-        <footer>
-            <p>若您已完成付款但未收到通知，請務必聯繫客服：</p>
-            <a href="tel:0800276276" class="phone-link">
-                <strong>0800-276-276</strong>
-            </a>
-            <p class="service-time">(服務時間：09:00 - 23:00)</p>
+        <footer class="tips">
+            💡 提示：深呼吸，喝口水，美味值得等待。
         </footer>
-    </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
